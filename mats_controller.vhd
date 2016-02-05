@@ -122,7 +122,7 @@ begin
 				w <= '1';
 				r <= '0';
 				enable_ram <= '1';
-				if (current_addr = std_logic_vector(to_unsigned(0, width))) then
+				if (current_addr = std_logic_vector(to_unsigned(0, addr))) then
 					next_state <= s6;
 				else
 					next_state <= s5;
